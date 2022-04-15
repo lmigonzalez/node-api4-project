@@ -17,7 +17,11 @@ const users = [
 		password: 'susanefox123'
 	}
 ]
-
+server.get('/', (req, res) =>{
+	res.status(200).send({
+		message: 'hello'
+	})
+})
 
 server.get('/api/users', (req, res) =>{
 	res.status(200).send(users)
