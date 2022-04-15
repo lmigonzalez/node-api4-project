@@ -18,9 +18,8 @@ const users = [
 	}
 ]
 server.get('/', (req, res) =>{
-	res.status(200).send({
-		message: 'hello'
-	})
+	res.status(200).send('<h1> Hello <h1/>')
+	console.log('test log')
 })
 
 server.get('/api/users', (req, res) =>{
